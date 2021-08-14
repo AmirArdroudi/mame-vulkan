@@ -15,6 +15,7 @@ namespace mame
 		mameWindow(int w, int h, std::string name);
 		~mameWindow();
 
+		bool shouldClose() { return glfwWindowShouldClose(window); }
 	private:
 
 		void initWindow();
